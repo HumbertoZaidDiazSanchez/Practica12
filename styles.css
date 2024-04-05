@@ -1,0 +1,111 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+    background: linear-gradient(300deg, #FF3333, #33FF33, #FFFC00); /* Fondo con gradiente lineal */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    display: flex; /* Usar flexbox para diseño */
+  }
+  /* Estilos del contenedor principal */
+  main {
+    display: flex; /* Usar flexbox para diseño */
+    flex-direction: column; /* Orientación de columnas */
+    align-items: center; /* Centrar elementos horizontalmente */
+    justify-content: flex-end; /* Alinear al final del contenedor */
+    min-height: 50vh; /* Altura mínima del viewport */
+    padding: 20px; /* Relleno interno */
+  }
+/* Estilos de la caja blanca */
+  .caja-blanca {
+    background-color: white; /* Color de fondo blanco */
+    padding: 20px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 300px; /* Ancho deseado de la caja blanca */
+    margin-bottom: 20px; /* Margen inferior */
+    position: relative; /* Posición relativa */ 
+  }
+/* Estilos de la imagen dentro de la caja blanca */
+  .imagen-caja {
+    width: 100%; /* Tamaño de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 10px; /* Espacio entre la imagen y el párrafo */
+    border-radius: 10px; /* Redondear bordes de la imagen */
+    display: block; /* Mostrar la imagen como bloque */
+  }
+  /* Estilos del formulario de registro */
+  .registro {
+    max-width: 300px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px; /* Margen inferior */
+  }
+  /* Estilos de los campos del formulario */
+  .campo {
+    margin-bottom: 10px; /* Espacio inferior */
+  }
+  /* Estilos de las etiquetas del formulario */
+  label {
+    display: block; /* Mostrar en bloque */
+    margin-bottom: 5px; /* Espacio inferior */
+  }
+  /* Estilos de los campos de entrada y selección */
+  input,
+  select {
+    width: 100%; /* Ancho completo */
+    padding: 8px; /* Relleno interno */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  /* Estilos del botón de envío */
+  button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno interno */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  }
+  /* Estilos del botón de envío al pasar el cursor */
+  button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar */
+  }
+  /* Estilos para mensajes de error */
+  .mensaje-error {
+    color: red; /* Color rojo para mensajes de error */
+    margin-top: 10px; /* Margen superior */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */   
+    padding: 0; /* Sin relleno */
+  }
+/* Estilos para mensajes de éxito */
+.mensaje-exito {
+  color: blue; /* Color azul para mensajes de éxito */
+  margin-top: 10px; /* Margen superior */
+}
+  /* Estilos de la sección de detalles del evento */
+  .detalles-evento {
+    display: grid; /* Usar grid para diseño */
+    gap: 10px; /* Espacio entre elementos */
+    max-width: 300px; /* Ancho máximo */
+    width: 100%; /* Ancho completo */
+  }
+  /* Media query para pantallas más grandes (mínimo 768px) */
+  @media only screen and (min-width: 768px) {
+    main {
+      flex-direction: row; /* Orientación de filas para pantallas grandes */
+      justify-content: space-between; /* Espacio entre elementos */
+    }
+  /* Ajustes para el formulario en pantallas grandes */
+    .registro {
+      width: 50%; /* Ancho del formulario */
+      margin-bottom: 0; /* Eliminar margen inferior */
+    }
+  /* Ajustes para la sección de detalles del evento en pantallas grandes */
+    .detalles-evento {
+      width: 40%; /* Ancho de la sección */
+    }
+  }
+/* Estilos para el título h3 */
+  h3{
+    color: #0056b3; /* Color azul */
+  }

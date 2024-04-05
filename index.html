@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title> <!--Titulo de la pagina-->
+  <link rel="stylesheet" href="styles.css"> <!--url de estilos-->
+</head>
+<body>
+  <main>
+    <!--Seccion de registro-->
+    <section class="registro">
+      <h1>Formulario de Registro para el Evento Gamer</h1> <!-- Título del formulario -->
+      <form id="registroForm">
+        <!--Campos del formulario-->
+        <div class="campo"> <!-- Campo para ingresar el nombre -->
+          <label for="nombre">Ingresa tu nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="campo"><!-- Campo para ingresar el correo -->
+          <label for="email">Ingresa tu Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="campo"><!-- Campo para ingresar el numero de telefono -->
+          <label for="telefono">Ingresa tu número de teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div class="campo"><!-- Seleccion del tipo de entrada -->
+          <label for="tipoEntrada">Seleccione el tipo de entrada:</label>
+          <select id="tipoEntrada" name="tipoEntrada" required>
+            <option value="">No Seleccionado...</option><!-- Opcion no seleccionada -->
+            <option value="general">General</option><!-- Opcion: General -->
+            <option value="vip">VIP</option><!-- Opcion VIP -->
+            <option value="platinum">Platinum</option><!-- Opcion Platinum -->
+          </select>
+        </div>
+        <!-- Boton de registro -->
+        <button type="submit">Registrarse</button>
+      </form>
+      <!-- ID en caso de que haya error al completar el formulario -->
+      <div id="mensajeError" class="mensaje-error"></div>
+    </section>
+    <!-- Descripcion sobre el evento -->
+    <section class="detalles-evento">
+      <h2>Detalles del evento</h2>
+      <p>Fecha: 30 de abril de 2024</p>
+      <p>Lugar: Centro Internacional de Exposiciones y Convenciones WTC</p>
+      <p>Descripción: Un evento increíble para todo gamer que no se puede perder.</p>
+    </section>
+  </main>
+  <!-- Contenedor de caja blanca con imagen ilustrativa -->
+  <div class="caja-blanca">
+    <h3>Festival anual de videojuegos</h3>
+    <!-- Imagen usada y descripcion -->
+    <img src="controles.jpg" alt="descripcion" class="imagen-caja">
+    <p>Registrate ahora para ganar premios en el evento y recibir noticias</p>        
+  </div>
+  <!-- Script de la validacion del formulario -->
+  <script src="script.js"></script>
+</body>
+</html>
